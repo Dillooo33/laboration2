@@ -1,0 +1,244 @@
+{
+    "Pokemon": [
+        {
+            "id": 1,
+            "name": "Bulbasaur",
+            "type": ["Grass", "Poison"],
+            "category": "Seed",
+            "gender": "M/F",
+            "abilities": "Overgrow",
+            "weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+            "image": "../image/bulbasaur.jpg",
+            "evolutions": [
+                {
+                    "id": 2,
+                    "name": "Ivysaur"
+                },
+                {
+                    "id": 3,
+                    "name": "Venusaur"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Ivysaur",
+            "type": ["Grass", "Poison"],
+            "category": "Seed",
+            "gender": "M/F",
+            "abilities": "Overgrow",
+            "weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+            "image": "../image/ivysaur.jpg",
+            "evolutions": [
+                {
+                    "id": 1,
+                    "name": "Bulbasaur"
+                },
+                {
+                    "id": 3,
+                    "name": "Venusaur"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Venusaur",
+            "type": ["Grass", "Poison"],
+            "category": "Seed",
+            "gender": "M/F",
+            "abilities": "Overgrow",
+            "weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+            "image": "../image/venusaur.jpg",
+            "evolutions": [
+                {
+                    "id": 1,
+                    "name": "Bulbasaur"
+                },
+                {
+                    "id": 3,
+                    "name": "Ivysaur"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Charmander",
+            "type": "Fire",
+            "category": "Lizard",
+            "gender": "M/F",
+            "abilities": "Blaze",
+            "weaknesses": ["Water", "Ground", "Rock"],
+            "image": "../image/charmander.jpg",
+            "evolutions": [
+                {
+                    "id": 5,
+                    "name": "Charmeleon"
+                },
+                {
+                    "id": 6,
+                    "name": "Charizard"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Charmeleon",
+            "type": "Fire",
+            "category": "Flame",
+            "gender": "M/F",
+            "abilities": "Blaze",
+            "weaknesses": ["Water", "Ground", "Rock"],
+            "image": "../image/charmeleon.jpg",
+            "evolutions": [
+                {
+                    "id": 4,
+                    "name": "Charmander"
+                },
+                {
+                    "id": 6,
+                    "name": "Charizard"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Charizard",
+            "type": ["Fire", "Flying"],
+            "category": "Flame",
+            "gender": "M/F",
+            "abilities": "Blaze",
+            "weaknesses": ["Water", "Electric", "Rock"],
+            "image": "../image/charmeleon.jpg",
+            "evolutions": [
+                {
+                    "id": 4,
+                    "name": "Charmander"
+                },
+                {
+                    "id": 5,
+                    "name": "Charmeleon"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Squirtle",
+            "type": "Water",
+            "category": "Tiny Turtle",
+            "gender": "M/F",
+            "abilities": "Torrent",
+            "weaknesses": ["Grass", "Electric"],
+            "image": "../image/squirtle.jpg",
+            "evolutions": [
+                {
+                    "id": 8,
+                    "name": "Wartortle"
+                },
+                {
+                    "id": 9,
+                    "name": "Blastoise"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Wartortle",
+            "type": "Water",
+            "category": "Turtle",
+            "gender": "M/F",
+            "abilities": "Torrent",
+            "weaknesses": ["Grass", "Electric"],
+            "image": "../image/wartortle.jpg",
+            "evolutions": [
+                {
+                    "id": 7,
+                    "name": "Squirtle"
+                },
+                {
+                    "id": 9,
+                    "name": "Blastoise"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Blastoise",
+            "type": "Water",
+            "category": "Shellfish",
+            "gender": "M/F",
+            "abilities": "Torrent",
+            "weaknesses": ["Grass", "Electric"],
+            "image": "../image/blastoise.jpg",
+            "evolutions": [
+                {
+                    "id": 7,
+                    "name": "Squirtle"
+                },
+                {
+                    "id": 8,
+                    "name": "Wartortle"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Pichu",
+            "type": "Electric",
+            "category": "Tiny Mouse",
+            "gender": "M/F",
+            "abilities": "Static",
+            "weaknesses": "Ground",
+            "image": "../image/pichu.jpg",
+            "evolutions": [
+                {
+                    "id": 11,
+                    "name": "Pikachu"
+                },
+                {
+                    "id": 12,
+                    "name": "Raichu"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Pikachu",
+            "type": "Electric",
+            "category": "Mouse",
+            "gender": "M/F",
+            "abilities": "Static",
+            "weaknesses": "Ground",
+            "image": "../image/pikachu.jpg",
+            "evolutions": [
+                {
+                    "id": 10,
+                    "name": "Pichu"
+                },
+                {
+                    "id": 12,
+                    "name": "Raichu"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Raichu",
+            "type": "Electric",
+            "category": "Mouse",
+            "gender": "M/F",
+            "abilities": "Static",
+            "weaknesses": "Ground",
+            "image": "../image/raichu.jpg",
+            "evolutions": [
+                {
+                    "id": 10,
+                    "name": "Pichu"
+                },
+                {
+                    "id": 11,
+                    "name": "Pikachu"
+                }
+            ]
+        }
+    ]
+}
