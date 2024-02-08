@@ -1,5 +1,4 @@
 <template>
-    <div>
         <div>
             <navbar-component />
         </div>
@@ -7,7 +6,6 @@
         <div>
             <footer-component />
         </div>
-    </div>
 </template>
 
 <script>

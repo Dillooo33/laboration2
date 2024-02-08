@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="logo">Dylans PokeDex</p>
+        <h2 id="logo">Pokémon</h2>
         <ul>
             <li><router-link :to="{ name: 'home' }">Home</router-link></li>
             <li>
@@ -20,7 +20,30 @@
 </script>
 
 <style scoped>
-    h2 {
+    #logo {
+        font-size: 1.5rem;
+        letter-spacing: 0.07rem;
+        float: left;
+    }
+
+    ul {
+        float: right;
+        margin-right: 1.25rem;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0 0.31rem;
+    }
+
+    ul li {
         font-size: 1rem;
+        text-transform: uppercase;
+        padding: 0.2rem;
+    }
+
+    ul li a {
+        color: #ffffff;
+        text-decoration: none;
     }
 </style>

@@ -4,9 +4,14 @@
         <div id="pokemon-filter">
             <label for="filter">Filter</label>
             <select name="filters" id="filter">
-                <select value=""></select>
-                <select value=""></select>
-                <select value=""></select>
+                <option value="none">None</option>
+                <option value="a-z">A-Z</option>
+                <option value="z-a">Z-A</option>
+                <optgroup label="generation">
+                    <option value="gen1">Generation 1</option>
+                    <option value="gen2">Generation 2</option>
+                    <option value="gen4">Generation 4</option>
+                </optgroup>
             </select>
         </div>
         <div class="pokemon-container">
@@ -78,5 +83,12 @@
 
     .pokemon-name {
         font-weight: bold;
+    }
+
+    #pokemon-filter {
+        margin-bottom: 20px;
+        text-align: left;
+        width: 20vh;
+        padding: 8px;
     }
 </style>
