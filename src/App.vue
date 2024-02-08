@@ -1,15 +1,23 @@
 <template>
     <div>
-        <ul>
-            <li><router-link :to="{ name: 'home' }">Home</router-link></li>
-            <li>
-                <router-link :to="{ name: 'pokedex' }">PokéDex</router-link>
-            </li>
-        </ul>
+        <div>
+            <navbar-component />
+        </div>
+        <router-view />
+        <div>
+            <footer-component />
+        </div>
     </div>
-    <router-view />
 </template>
 
 <script>
-    import { RouterView, RouterLink } from 'vue-router'
+    import navbarComponent from './components/navbar-component.vue'
+    import footerComponent from './components/footer-component.vue'
+
+    export default {
+        components: {
+            navbarComponent,
+            footerComponent
+        }
+    }
 </script>

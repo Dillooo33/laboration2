@@ -1,6 +1,14 @@
 <template>
     <div>
-        <h1 class="header">PokéDex</h1>
+        <h1>PokéDex</h1>
+        <div id="pokemon-filter">
+            <label for="filter">Filter</label>
+            <select name="filters" id="filter">
+                <select value=""></select>
+                <select value=""></select>
+                <select value=""></select>
+            </select>
+        </div>
         <div class="pokemon-container">
             <div
                 v-for="pokemon in pokemonList"
@@ -46,11 +54,6 @@
 </script>
 
 <style scoped>
-    .header {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
     .pokemon-container {
         display: flex;
         flex-wrap: wrap;

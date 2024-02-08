@@ -1,6 +1,3 @@
 <template>
-    <h1>Pokemon gonna catch theem aaaall</h1>
-    <button>Click please</button>
+    <h1>Home</h1>
 </template>
-
-

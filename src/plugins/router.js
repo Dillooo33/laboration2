@@ -6,12 +6,17 @@ const routes = [
         path: '/pokedex',
         name: 'pokedex',
         component: () => import('@/views/PokeDex.vue')
+    },
+    {
+        path: '/randomiser',
+        name: 'randomiser',
+        component: () => import('@/views/Randomiser.vue')
     }
 ]
 
 const router = createRouter({
     routes,
-    history: createWebHistory(),
+    history: createWebHistory()
 })
 
 export default router
