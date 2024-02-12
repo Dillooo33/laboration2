@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>PokéDex</h1>
+        <h1 class="header">PokéDex</h1>
         <div id="pokemon-filter">
             <label for="filter">Filter</label>
             <select name="filters" id="filter">
@@ -59,6 +59,9 @@
 </script>
 
 <style scoped>
+    body {
+        background-color: #242424;
+    }
     .pokemon-container {
         display: flex;
         flex-wrap: wrap;
@@ -90,5 +93,10 @@
         text-align: left;
         width: 20vh;
         padding: 8px;
+    }
+
+    #filter {
+        padding: 0.2rem;
+        border-radius: 5px;
     }
 </style>
