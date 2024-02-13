@@ -3,7 +3,7 @@
         <h1 class="header">PokéDex</h1>
         <div id="pokemon-filter">
             <label for="filter">Filter</label>
-            <select name="filters" id="filter">
+            <select name="filters" id="poke-filters">
                 <option value="none">None</option>
                 <option value="a-z">A-Z</option>
                 <option value="z-a">Z-A</option>
@@ -14,89 +14,28 @@
                 </optgroup>
             </select>
         </div>
-        <div class="pokemon-container">
-            <div
-                v-for="pokemon in pokemonList"
-                :key="pokemon.id"
-                class="pokemon-card"
-            >
-                <img
-                    :src="pokemon.image"
-                    alt="Pokemon Image"
-                    class="pokemon-image"
-                />
-                <span class="pokemon-name">{{ pokemon.name }}</span>
-            </div>
-        </div>
+        <PokemonCards />
     </div>
 </template>
 
 <script>
-    import axios from 'axios'
+    import PokemonCards from '../components/pokemon-cards.vue'
 
     export default {
-        data() {
-            return {
-                pokemonList: []
-            }
-        },
-        mounted() {
-            this.fetchPokemonData()
-        },
-        methods: {
-            fetchPokemonData() {
-                axios
-                    .get('../../data/pokeDex.JSON')
-                    .then((response) => {
-                        this.pokemonList = response.data.Pokemon
-                    })
-                    .catch((error) => {
-                        console.error(error)
-                    })
-            }
+        components: {
+            PokemonCards
         }
     }
 </script>
 
 <style scoped>
-    body {
-        background-color: #242424;
-    }
-    .pokemon-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .pokemon-card {
-        text-align: center;
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        width: 200px;
-    }
-
-    .pokemon-image {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        margin-bottom: 10px;
-    }
-
-    .pokemon-name {
-        font-weight: bold;
-    }
-
     #pokemon-filter {
-        margin-bottom: 20px;
-        text-align: left;
-        width: 20vh;
-        padding: 8px;
+        float: left;
     }
 
-    #filter {
-        padding: 0.2rem;
+    #poke-filters {
+        padding: 0.1rem;
+        width: 5rem;
         border-radius: 5px;
     }
 </style>

@@ -348,6 +348,29 @@
                     "name": "Meowth"
                 }
             ]
+        },
+        {
+            "id": 18,
+            "name": "Aron",
+            "type": ["Steel", "Rock"],
+            "category": "Iron Armor",
+            "abilities": ["Rock Head", "Sturdy"],
+            "weaknesses": ["Water", "Fighting", "Ground"],
+            "evolutionStage": "One",
+            "Gen": "Three",
+            "image": "../image/aron.jpg",
+            "evolutions": [
+                {
+                    "name": "Lairon",
+                    "image": "../image/lairon.jpg",
+                    "Gen": "Three"
+                },
+                {
+                    "name": "Aggron",
+                    "image": "../image/aggron.jpg",
+                    "Gen": "Three"
+                }
+            ]
         }
     ]
 }

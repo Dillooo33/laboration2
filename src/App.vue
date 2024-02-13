@@ -1,16 +1,16 @@
 <template>
-        <div>
-            <navbar-component />
-        </div>
-        <router-view />
-        <div>
-            <footer-component />
-        </div>
+    <div>
+        <navbar-component />
+    </div>
+    <router-view />
+    <div>
+        <footer-component />
+    </div>
 </template>
 
 <script>
-    import navbarComponent from './components/navbar-component.vue'
-    import footerComponent from './components/footer-component.vue'
+    import navbarComponent from '@/components/navbar-component.vue'
+    import footerComponent from '@/components/footer-component.vue'
 
     export default {
         components: {

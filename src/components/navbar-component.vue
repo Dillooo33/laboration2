@@ -1,7 +1,9 @@
 <template>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <router-link class="navbar-brand" :to="{ name: 'home' }"
+                >Dylans Pokémon</router-link
+            >
             <button
                 class="navbar-toggler"
                 type="button"
@@ -23,39 +25,17 @@
                             >PokéDex</router-link
                         >
                     </li>
-                    <li class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
+                    <li class="nav-item">
+                        <router-link :to="{ name: 'randomiser' }"
+                            >Randomiser</router-link
                         >
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#"
-                                    >Another action</a
-                                >
-                            </li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li>
-                                <a class="dropdown-item" href="#"
-                                    >Something else here</a
-                                >
-                            </li>
-                        </ul>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input
                         class="form-control me-2"
                         type="search"
-                        placeholder="Search"
+                        placeholder="Search.."
                         aria-label="Search"
                     />
                     <button class="btn btn-outline-success" type="submit">
@@ -67,52 +47,54 @@
     </nav>
 </template>
 
-<!-- <template>
-    <div>
-        <h2 id="logo">Dylans Pokémon</h2>
-        <ul>
-            <li><router-link :to="{ name: 'home' }">Home</router-link></li>
-            <li>
-                <router-link :to="{ name: 'pokedex' }">PokéDex</router-link>
-            </li>
-            <li>
-                <router-link :to="{ name: 'randomiser' }"
-                    >Randomiser</router-link
-                >
-            </li>
-        </ul>
-    </div>
-</template>
--->
 <script>
     import { RouterView, RouterLink } from 'vue-router'
 </script>
 
 <style scoped>
-    #logo {
-        font-size: 1.5rem;
+    .navbar-brand {
+        font-size: 0.8rem;
         letter-spacing: 0.07rem;
-        float: left;
+        font-weight: bold;
     }
 
     ul {
         float: right;
-        margin-right: 1.25rem;
     }
 
     ul li {
-        display: inline-block;
-        margin: 0 0.31rem;
-    }
-
-    ul li {
-        font-size: 1rem;
+        font-size: 0.6rem;
         text-transform: uppercase;
         padding: 0.2rem;
     }
 
     ul li a {
-        color: #ffffff;
+        color: #5f5e5e;
         text-decoration: none;
+    }
+
+    .btn-outline-success {
+        color: #5f5e5e;
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+
+    .btn-outline-success:hover {
+        background-color: #5f5e5e;
+        color: #f3f3f3;
+        transition: background-color 0.3s ease;
+        border: 2px solid #5f5e5e;
+    }
+
+    .nav-item:hover {
+        text-decoration: underline;
+    }
+
+    .form-control {
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+        font-size: 0.7rem;
     }
 </style>
