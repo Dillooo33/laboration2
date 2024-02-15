@@ -7,11 +7,6 @@
                 <option value="none">None</option>
                 <option value="a-z">A-Z</option>
                 <option value="z-a">Z-A</option>
-                <optgroup id="gen" label="generation">
-                    <option value="gen1">Generation 1</option>
-                    <option value="gen2">Generation 2</option>
-                    <option value="gen4">Generation 4</option>
-                </optgroup>
             </select>
         </div>
         <PokemonCards />

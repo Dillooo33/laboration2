@@ -1,5 +1,5 @@
 <template>
-    <h1>Home</h1>
+    <h1 class="header">Home</h1>
     <heroImg />
 </template>
 
@@ -12,3 +12,11 @@
         }
     }
 </script>
+
+<style scoped>
+    .header {
+        font-size: 3rem;
+        text-align: center;
+        padding: 2rem;
+    }
+</style>
