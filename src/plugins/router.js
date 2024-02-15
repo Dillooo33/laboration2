@@ -8,11 +8,6 @@ const routes = [
         component: () => import('@/views/PokeDex.vue')
     },
     {
-        path: '/randomiser',
-        name: 'randomiser',
-        component: () => import('@/views/Randomiser.vue')
-    },
-    {
         path: '/pokemon/:id',
         name: 'pokemonInfo',
         component: () => import('@/views/PokemonInfo.vue')

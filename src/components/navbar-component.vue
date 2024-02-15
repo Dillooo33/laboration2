@@ -25,11 +25,6 @@
                             >PokéDex</router-link
                         >
                     </li>
-                    <li class="nav-item">
-                        <router-link :to="{ name: 'randomiser' }"
-                            >Randomiser</router-link
-                        >
-                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input
@@ -48,7 +43,7 @@
 </template>
 
 <script>
-    import { RouterView, RouterLink } from 'vue-router'
+    import { RouterLink } from 'vue-router'
 </script>
 
 <style scoped>
@@ -60,6 +55,7 @@
         letter-spacing: 0.2rem;
         font-weight: bold;
         padding: 0.5rem;
+        margin-right: 6rem;
     }
 
     ul li {
@@ -89,7 +85,9 @@
         transition: background-color 0.3s ease;
         border: 2px solid #5f5e5e;
     }
-
+    .nav-item {
+        margin-right: 1.5rem;
+    }
     .nav-item:hover {
         text-decoration: underline orange;
     }

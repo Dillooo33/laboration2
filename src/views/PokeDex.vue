@@ -24,16 +24,14 @@
 </script>
 
 <style scoped>
-    .header {
-        font-size: 3rem;
-        text-align: center;
-        padding: 2rem;
-    }
     #pokemon-filter {
         float: left;
-        font-size: 1rem;
-        width: 7.5rem;
-        margin-left: 1rem;
+        font-size: 2rem;
+        width: 7rem;
+        margin-left: 3rem;
+    }
+    #poke-filters {
+        padding: 0.5rem;
     }
     #labels {
         font-size: 1.5rem;

@@ -13,10 +13,4 @@
     }
 </script>
 
-<style scoped>
-    .header {
-        font-size: 3rem;
-        text-align: center;
-        padding: 2rem;
-    }
-</style>
+<style scoped></style>

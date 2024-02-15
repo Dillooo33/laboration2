@@ -1,7 +1,6 @@
 <template>
     <div v-if="pokemon">
-        <h1>{{ pokemon.name }}</h1>
-        <p>Name: {{ pokemon.name }}</p>
+        <h1 class="header">{{ pokemon.name }}</h1>
         <p>Type: {{ pokemon.type }}</p>
         <p>Category: {{ pokemon.category }}</p>
         <p>Abilities: {{ pokemon.abilities }}</p>
@@ -25,6 +24,7 @@
         },
         mounted() {
             const pokemonId = this.$route.params.id
+            console.log('Pokemon ID:', pokemonId)
             this.fetchPokemonData(pokemonId)
         },
         methods: {
@@ -33,6 +33,7 @@
                     .get(`/data/pokemon/${pokemonId}.json`)
                     .then((response) => {
                         this.pokemon = response.data
+                        console.log(this.pokemon.name)
                     })
                     .catch((error) => {
                         console.error(error)
@@ -41,3 +42,7 @@
         }
     }
 </script>
+
+<style>
+    /* Fixa leyouten och att alla fonts och liknande ser bra ut efter att jag fått renderingen och funka! */
+</style>
