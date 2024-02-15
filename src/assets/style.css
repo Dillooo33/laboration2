@@ -1,20 +1,21 @@
-:root {
+* {
     font-family: Bangers, Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    /*    font-size: 2rem; */
     box-sizing: border-box;
-    line-height: 1.2;
+    /*     line-height: 1.2; */
 
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-}
-
-body {
+    /*     color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;*/
     margin: 0;
     padding: 0;
-    display: flex;
     overflow-x: hidden;
+}
+
+#app {
     text-decoration: none;
     letter-spacing: 0.1rem;
+    color: rgba(255, 255, 255, 0.87);
+    background: #242424;
 }
 
 .header {
@@ -25,9 +26,4 @@ body {
 
 h2 {
     font-size: 1rem;
-}
-
-#app {
-    padding: 2rem;
-    text-align: center;
 }

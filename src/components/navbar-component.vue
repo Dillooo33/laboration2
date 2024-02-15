@@ -52,18 +52,18 @@
 </script>
 
 <style scoped>
-    .navbar-brand {
-        font-size: 0.8rem;
-        letter-spacing: 0.07rem;
-        font-weight: bold;
+    .navbar {
+        padding: 2rem;
     }
-
-    ul {
-        float: right;
+    .navbar-brand {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        font-weight: bold;
+        padding: 0.5rem;
     }
 
     ul li {
-        font-size: 0.6rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
         padding: 0.2rem;
     }
@@ -74,9 +74,11 @@
     }
 
     .btn-outline-success {
+        justify-content: center;
+        align-items: center;
         color: #5f5e5e;
-        font-size: 0.7rem;
-        padding: 0.2rem 0.5rem;
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
         border-radius: 5px;
         border: 1px solid;
     }
@@ -89,12 +91,12 @@
     }
 
     .nav-item:hover {
-        text-decoration: underline;
+        text-decoration: underline orange;
     }
 
     .form-control {
-        padding: 0.2rem 0.5rem;
+        padding: 0.5rem 1rem;
         border-radius: 5px;
-        font-size: 0.7rem;
+        font-size: 1.5rem;
     }
 </style>

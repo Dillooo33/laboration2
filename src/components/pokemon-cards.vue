@@ -8,7 +8,12 @@
             />
             <div class="card-body">
                 <h5 class="card-title">{{ pokemon.name }}</h5>
-                <a href="#" class="btn btn-primary btn-sm">See More!</a>
+                <button
+                    @click="viewPokemon(pokemon.id)"
+                    class="btn btn-primary btn-sm"
+                >
+                    See More!
+                </button>
             </div>
         </div>
     </div>
@@ -29,13 +34,16 @@
         methods: {
             fetchPokemonData() {
                 axios
-                    .get('../../data/pokeDex.JSON')
+                    .get('/data/pokeDex.JSON')
                     .then((response) => {
                         this.pokemonList = response.data.Pokemon
                     })
                     .catch((error) => {
                         console.error(error)
                     })
+            },
+            viewPokemon(pokemonId) {
+                this.$router.push({ path: '/pokemon/' + pokemonId })
             }
         }
     }
@@ -54,8 +62,7 @@
         padding: 10px;
         border: 1px solid #5f5e5e;
         border-radius: 5px;
-        width: 8.5rem;
-        height: 13rem;
+        width: 20rem;
     }
 
     .card-img-top {
@@ -63,11 +70,11 @@
     }
 
     .card-title {
-        font-size: 0.8rem;
+        font-size: 2rem;
     }
 
     .btn-primary {
-        font-size: 0.75rem;
+        font-size: 1.5rem;
         background-color: #5f5e5e;
         color: #f3f3f3;
         border: #5f5e5e;

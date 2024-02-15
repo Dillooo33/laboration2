@@ -5,10 +5,9 @@
             "name": "Bulbasaur",
             "type": ["Grass", "Poison"],
             "category": "Seed",
-            "abilities": "Overgrow",
+            "abilities": ["Overgrow"],
             "weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
             "evolutionStage": "One",
-            "Gen": "One",
             "image": "../image/bulbasaur.jpg",
             "evolutions": [
                 {
@@ -26,10 +25,9 @@
             "name": "Ivysaur",
             "type": ["Grass", "Poison"],
             "category": "Seed",
-            "abilities": "Overgrow",
+            "abilities": ["Overgrow"],
             "weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
             "evolutionStage": "Two",
-            "Gen": "One",
             "image": "../image/ivysaur.jpg",
             "evolutions": [
                 {
@@ -47,10 +45,9 @@
             "name": "Venusaur",
             "type": ["Grass", "Poison"],
             "category": "Seed",
-            "abilities": "Overgrow",
+            "abilities": ["Overgrow"],
             "weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
             "evolutionStage": "Three",
-            "Gen": "One",
             "image": "../image/venusaur.jpg",
             "evolutions": [
                 {
@@ -66,12 +63,11 @@
         {
             "id": 4,
             "name": "Charmander",
-            "type": "Fire",
+            "type": ["Fire"],
             "category": "Lizard",
-            "abilities": "Blaze",
+            "abilities": ["Blaze"],
             "weaknesses": ["Water", "Ground", "Rock"],
             "evolutionStage": "One",
-            "Gen": "One",
             "image": "../image/charmander.jpg",
             "evolutions": [
                 {
@@ -87,12 +83,11 @@
         {
             "id": 5,
             "name": "Charmeleon",
-            "type": "Fire",
+            "type": ["Fire"],
             "category": "Flame",
-            "abilities": "Blaze",
+            "abilities": ["Blaze"],
             "weaknesses": ["Water", "Ground", "Rock"],
             "evolutionStage": "Two",
-            "Gen": "One",
             "image": "../image/charmeleon.jpg",
             "evolutions": [
                 {
@@ -110,10 +105,9 @@
             "name": "Charizard",
             "type": ["Fire", "Flying"],
             "category": "Flame",
-            "abilities": "Blaze",
+            "abilities": ["Blaze"],
             "weaknesses": ["Water", "Electric", "Rock"],
             "evolutionStage": "Three",
-            "Gen": "One",
             "image": "../image/charmeleon.jpg",
             "evolutions": [
                 {
@@ -129,12 +123,11 @@
         {
             "id": 7,
             "name": "Squirtle",
-            "type": "Water",
+            "type": ["Water"],
             "category": "Tiny Turtle",
-            "abilities": "Torrent",
+            "abilities": ["Torrent"],
             "weaknesses": ["Grass", "Electric"],
             "evolutionStage": "One",
-            "Gen": "One",
             "image": "../image/squirtle.jpg",
             "evolutions": [
                 {
@@ -150,12 +143,11 @@
         {
             "id": 8,
             "name": "Wartortle",
-            "type": "Water",
+            "type": ["Water"],
             "category": "Turtle",
-            "abilities": "Torrent",
+            "abilities": ["Torrent"],
             "weaknesses": ["Grass", "Electric"],
             "evolutionStage": "Two",
-            "Gen": "One",
             "image": "../image/wartortle.jpg",
             "evolutions": [
                 {
@@ -171,12 +163,11 @@
         {
             "id": 9,
             "name": "Blastoise",
-            "type": "Water",
+            "type": ["Water"],
             "category": "Shellfish",
-            "abilities": "Torrent",
+            "abilities": ["Torrent"],
             "weaknesses": ["Grass", "Electric"],
             "evolutionStage": "Three",
-            "Gen": "One",
             "image": "../image/blastoise.jpg",
             "evolutions": [
                 {
@@ -192,12 +183,11 @@
         {
             "id": 10,
             "name": "Pichu",
-            "type": "Electric",
+            "type": ["Electric"],
             "category": "Tiny Mouse",
-            "abilities": "Static",
-            "weaknesses": "Ground",
+            "abilities": ["Static"],
+            "weaknesses": ["Ground"],
             "evolutionStage": "One",
-            "Gen": "Two",
             "image": "../image/pichu.jpg",
             "evolutions": [
                 {
@@ -213,12 +203,11 @@
         {
             "id": 11,
             "name": "Pikachu",
-            "type": "Electric",
+            "type": ["Electric"],
             "category": "Mouse",
-            "abilities": "Static",
-            "weaknesses": "Ground",
+            "abilities": ["Static"],
+            "weaknesses": ["Ground"],
             "evolutionStage": "Two",
-            "Gen": "One",
             "image": "../image/pikachu.jpg",
             "evolutions": [
                 {
@@ -234,12 +223,11 @@
         {
             "id": 12,
             "name": "Raichu",
-            "type": "Electric",
+            "type": ["Electric"],
             "category": "Mouse",
-            "abilities": "Static",
-            "weaknesses": "Ground",
+            "abilities": ["Static"],
+            "weaknesses": ["Ground"],
             "evolutionStage": "Three",
-            "Gen": "One",
             "image": "../image/raichu.jpg",
             "evolutions": [
                 {
@@ -254,123 +242,90 @@
         },
         {
             "id": 13,
-            "name": "Togepi",
-            "type": "Fairy",
-            "category": "Spike Ball",
-            "abilities": ["Serene Grace", "Hustle"],
-            "weaknesses": ["Poison", "Steel"],
-            "evolutionStage": "One",
-            "Gen": "Two",
-            "image": "../image/togepi.jpg",
-            "evolutions": [
-                {
-                    "id": 14,
-                    "name": "Togetic"
-                },
-                {
-                    "id": 15,
-                    "name": "Togekiss"
-                }
-            ]
-        },
-        {
-            "id": 14,
-            "name": "Togetic",
-            "type": ["Fairy", "Flying"],
-            "category": "Happiness",
-            "abilities": ["Serene Grace", "Hustle"],
-            "weaknesses": ["Poison", "Steel", "Electric", "Ice", "Rock"],
-            "evolutionStage": "Two",
-            "Gen": "Two",
-            "image": "../image/togetic.jpg",
-            "evolutions": [
-                {
-                    "id": 13,
-                    "name": "Togepi"
-                },
-                {
-                    "id": 15,
-                    "name": "Togekiss"
-                }
-            ]
-        },
-        {
-            "id": 15,
-            "name": "Togekiss",
-            "type": ["Fairy", "Flying"],
-            "category": "Jubilee",
-            "abilities": ["Serene Grace", "Hustle"],
-            "weaknesses": ["Poison", "Steel", "Electric", "Ice", "Rock"],
-            "evolutionStage": "Three",
-            "Gen": "Four",
-            "image": "../image/togekiss.jpg",
-            "evolutions": [
-                {
-                    "id": 13,
-                    "name": "Togepi"
-                },
-                {
-                    "id": 15,
-                    "name": "Togetic"
-                }
-            ]
-        },
-        {
-            "id": 16,
             "name": "Meowth",
-            "type": "Normal",
+            "type": ["Normal"],
             "category": "Scratch Cat",
             "abilities": ["Pickup", "Technician"],
-            "weaknesses": "Fighting",
+            "weaknesses": ["Fighting"],
             "evolutionStage": "One",
-            "Gen": "One",
             "image": "../image/meowth.jpg",
             "evolutions": [
                 {
-                    "id": 17,
+                    "id": 14,
                     "name": "Persian"
                 }
             ]
         },
         {
-            "id": 17,
+            "id": 14,
             "name": "Persian",
-            "type": "Normal",
+            "type": ["Normal"],
             "category": "Classy Cat",
             "abilities": ["Technician", "Limber"],
-            "weaknesses": "Fighting",
+            "weaknesses": ["Fighting"],
             "evolutionStage": "Two",
-            "Gen": "One",
             "image": "../image/persian.jpg",
             "evolutions": [
                 {
-                    "id": 16,
+                    "id": 13,
                     "name": "Meowth"
                 }
             ]
         },
         {
-            "id": 18,
-            "name": "Aron",
-            "type": ["Steel", "Rock"],
-            "category": "Iron Armor",
-            "abilities": ["Rock Head", "Sturdy"],
-            "weaknesses": ["Water", "Fighting", "Ground"],
+            "id": 15,
+            "name": "Mew",
+            "type": ["Psychic"],
+            "category": "New Species",
+            "abilities": ["Synchronize"],
+            "weaknesses": ["Bug", "Ghost", "Dark"],
             "evolutionStage": "One",
-            "Gen": "Three",
-            "image": "../image/aron.jpg",
-            "evolutions": [
-                {
-                    "name": "Lairon",
-                    "image": "../image/lairon.jpg",
-                    "Gen": "Three"
-                },
-                {
-                    "name": "Aggron",
-                    "image": "../image/aggron.jpg",
-                    "Gen": "Three"
-                }
-            ]
+            "image": "../image/mew.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 16,
+            "name": "Mewtwo",
+            "type": ["Psychic"],
+            "category": "Genetic",
+            "abilities": ["Pressure"],
+            "weaknesses": ["Bug", "Ghost", "Dark"],
+            "evolutionStage": "One",
+            "image": "../image/mewtwo.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 17,
+            "name": "Articuno",
+            "type": ["Ice", "Flying"],
+            "category": "Freeze",
+            "abilities": ["Pressure"],
+            "weaknesses": ["Fire", "Electric", "Rock", "Steel"],
+            "evolutionStage": "One",
+            "image": "../image/articuno.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 18,
+            "name": "Zapdos",
+            "type": ["Electric", "Flying"],
+            "category": "Electric",
+            "abilities": ["Pressure"],
+            "weaknesses": ["Ice", "Rock"],
+            "evolutionStage": "One",
+            "image": "../image/zapdos.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 19,
+            "name": "Moltres",
+            "type": ["Fire", "Flying"],
+            "category": "Flame",
+            "abilities": ["Pressure"],
+            "weaknesses": ["Water", "Electric", "Rock"],
+            "evolutionStage": "One",
+            "image": "../image/moltres.jpg",
+            "evolutions": []
         }
     ]
 }
