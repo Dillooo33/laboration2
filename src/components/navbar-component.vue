@@ -34,7 +34,11 @@
                         placeholder="Search.."
                         aria-label="Search"
                     />
-                    <button class="btn btn-outline-success" type="submit">
+                    <button
+                        @click.prevent="submitSearch"
+                        class="btn btn-outline-success"
+                        type="submit"
+                    >
                         Search
                     </button>
                 </form>
@@ -45,6 +49,14 @@
 
 <script>
     import { RouterLink } from 'vue-router'
+    import { ref, defineEmits } from 'vue'
+
+    const searchTerm = ref('')
+    const emit = defineEmits(['search'])
+
+    const submitSearch = () => {
+        emit('search', searchTerm.value)
+    }
 </script>
 
 <style scoped>

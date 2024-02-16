@@ -23,13 +23,20 @@
     import axios from 'axios'
 
     export default {
+        props: ['searchQuery'],
         data() {
             return {
                 pokemonList: []
             }
         },
-        mounted() {
-            this.fetchPokemonData()
+        computed: {
+            filteredPokemonList() {
+                return this.pokemonList.filter((pokemon) =>
+                    pokemon.name
+                        .toLowerCase()
+                        .includes(this.searchQuery.toLowerCase())
+                )
+            }
         },
         methods: {
             fetchPokemonData() {
@@ -45,6 +52,14 @@
             viewPokemon(pokemonId) {
                 this.$router.push({ path: '/pokemon/' + pokemonId })
             }
+        },
+        watch: {
+            searchQuery() {
+                this.fetchPokemonData()
+            }
+        },
+        mounted() {
+            this.fetchPokemonData()
         }
     }
 </script>
