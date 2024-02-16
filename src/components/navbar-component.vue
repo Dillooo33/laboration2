@@ -29,7 +29,6 @@
                 <form class="d-flex" role="search">
                     <input
                         class="form-control me-2"
-                        v-model="searchTerm"
                         type="search"
                         placeholder="Search.."
                         aria-label="Search"
@@ -49,14 +48,6 @@
 
 <script>
     import { RouterLink } from 'vue-router'
-    import { ref, defineEmits } from 'vue'
-
-    const searchTerm = ref('')
-    const emit = defineEmits(['search'])
-
-    const submitSearch = () => {
-        emit('search', searchTerm.value)
-    }
 </script>
 
 <style scoped>

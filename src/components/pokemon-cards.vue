@@ -23,7 +23,6 @@
     import axios from 'axios'
 
     export default {
-        props: ['searchQuery'],
         data() {
             return {
                 pokemonList: []
@@ -51,11 +50,6 @@
             },
             viewPokemon(pokemonId) {
                 this.$router.push({ path: '/pokemon/' + pokemonId })
-            }
-        },
-        watch: {
-            searchQuery() {
-                this.fetchPokemonData()
             }
         },
         mounted() {
