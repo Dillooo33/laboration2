@@ -29,6 +29,7 @@
                 <form class="d-flex" role="search">
                     <input
                         class="form-control me-2"
+                        v-model="searchTerm"
                         type="search"
                         placeholder="Search.."
                         aria-label="Search"
@@ -44,6 +45,48 @@
 
 <script>
     import { RouterLink } from 'vue-router'
+    import axios from 'axios'
+
+    export default {
+        data() {
+            return {
+                searchTerm: '',
+                pokemonList: []
+            }
+        },
+        mounted() {
+            this.fetchPokemonData()
+        },
+        methods: {
+            fetchPokemonData() {
+                axios
+                    .get('/data/pokeDex.JSON')
+                    .then((response) => {
+                        this.pokemonList = response.data.Pokemon
+                    })
+                    .catch((error) => {
+                        console.error(error)
+                    })
+            }
+        },
+        searchPokemon() {
+            const searchResult = this.pokemonList.find(
+                (pokemon) =>
+                    pokemon.name.toLowerCase() === this.searchTerm.toLowerCase()
+            )
+            if (searchResult) {
+                this.$router.push({
+                    name: 'pokemonInfo',
+                    params: { id: searchResult.name }
+                })
+            } else {
+                alert('No matching Pokémon found.')
+            }
+        },
+        components: {
+            RouterLink
+        }
+    }
 </script>
 
 <style scoped>

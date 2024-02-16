@@ -4,7 +4,7 @@
             <img
                 :src="pokemon.image"
                 class="card-img-top"
-                alt="Pokemon Image"
+                :alt="pokemon.name"
             />
             <div class="card-body">
                 <h5 class="card-title">{{ pokemon.name }}</h5>
@@ -26,6 +26,15 @@
         data() {
             return {
                 pokemonList: []
+            }
+        },
+        computed: {
+            filteredPokemonList() {
+                return this.pokemonList.filter((pokemon) =>
+                    pokemon.name
+                        .toLowerCase()
+                        .includes(this.$parent.searchTerm.toLowerCase())
+                )
             }
         },
         mounted() {
@@ -58,8 +67,9 @@
 
     .card {
         text-align: center;
-        margin: 10px;
-        padding: 10px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding: 2.5rem;
         border: 1px solid #5f5e5e;
         border-radius: 5px;
         width: 20rem;

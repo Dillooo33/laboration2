@@ -11,12 +11,12 @@
             "image": "../image/bulbasaur.jpg",
             "evolutions": [
                 {
-                    "id": 2,
-                    "name": "Ivysaur"
+                    "name": "Ivysaur",
+                    "image": "../image/ivysaur.jpg"
                 },
                 {
-                    "id": 3,
-                    "name": "Venusaur"
+                    "name": "Venusaur",
+                    "image": "../image/venusaur.jpg"
                 }
             ]
         },
@@ -31,12 +31,12 @@
             "image": "../image/ivysaur.jpg",
             "evolutions": [
                 {
-                    "id": 1,
-                    "name": "Bulbasaur"
+                    "name": "Bulbasaur",
+                    "image": "../image/bulbasaur.jpg"
                 },
                 {
-                    "id": 3,
-                    "name": "Venusaur"
+                    "name": "Venusaur",
+                    "image": "../image/venusaur.jpg"
                 }
             ]
         },
@@ -51,12 +51,12 @@
             "image": "../image/venusaur.jpg",
             "evolutions": [
                 {
-                    "id": 1,
-                    "name": "Bulbasaur"
+                    "name": "Bulbasaur",
+                    "image": "../image/bulbasaur.jpg"
                 },
                 {
-                    "id": 3,
-                    "name": "Ivysaur"
+                    "name": "Ivysaur",
+                    "image": "../image/ivysaur.jpg"
                 }
             ]
         },
@@ -71,12 +71,12 @@
             "image": "../image/charmander.jpg",
             "evolutions": [
                 {
-                    "id": 5,
-                    "name": "Charmeleon"
+                    "name": "Charmeleon",
+                    "image": "../image/charmeleon.jpg"
                 },
                 {
-                    "id": 6,
-                    "name": "Charizard"
+                    "name": "Charizard",
+                    "image": "../image/charizard.jpg"
                 }
             ]
         },
@@ -91,12 +91,12 @@
             "image": "../image/charmeleon.jpg",
             "evolutions": [
                 {
-                    "id": 4,
-                    "name": "Charmander"
+                    "name": "Charmander",
+                    "image": "../image/charmander.jpg"
                 },
                 {
-                    "id": 6,
-                    "name": "Charizard"
+                    "name": "Charizard",
+                    "image": "../image/charizard.jpg"
                 }
             ]
         },
@@ -108,15 +108,15 @@
             "abilities": ["Blaze"],
             "weaknesses": ["Water", "Electric", "Rock"],
             "evolutionStage": "Three",
-            "image": "../image/charmeleon.jpg",
+            "image": "../image/charizard.jpg",
             "evolutions": [
                 {
-                    "id": 4,
-                    "name": "Charmander"
+                    "name": "Charmander",
+                    "image": "../image/charmander.jpg"
                 },
                 {
-                    "id": 5,
-                    "name": "Charmeleon"
+                    "name": "Charmeleon",
+                    "image": "../image/charmeleon.jpg"
                 }
             ]
         },
@@ -131,12 +131,12 @@
             "image": "../image/squirtle.jpg",
             "evolutions": [
                 {
-                    "id": 8,
-                    "name": "Wartortle"
+                    "name": "Wartortle",
+                    "image": "../image/wartortle.jpg"
                 },
                 {
-                    "id": 9,
-                    "name": "Blastoise"
+                    "name": "Blastoise",
+                    "image": "../image/blastoise.jpg"
                 }
             ]
         },
@@ -151,12 +151,12 @@
             "image": "../image/wartortle.jpg",
             "evolutions": [
                 {
-                    "id": 7,
-                    "name": "Squirtle"
+                    "name": "Squirtle",
+                    "image": "../image/squirtle.jpg"
                 },
                 {
-                    "id": 9,
-                    "name": "Blastoise"
+                    "name": "Blastoise",
+                    "image": "../image/blastoise.jpg"
                 }
             ]
         },
@@ -171,12 +171,12 @@
             "image": "../image/blastoise.jpg",
             "evolutions": [
                 {
-                    "id": 7,
-                    "name": "Squirtle"
+                    "name": "Squirtle",
+                    "image": "../image/squirtle.jpg"
                 },
                 {
-                    "id": 8,
-                    "name": "Wartortle"
+                    "name": "Wartortle",
+                    "image": "../image/wartortle.jpg"
                 }
             ]
         },
@@ -191,12 +191,12 @@
             "image": "../image/pichu.jpg",
             "evolutions": [
                 {
-                    "id": 11,
-                    "name": "Pikachu"
+                    "name": "Pikachu",
+                    "image": "../image/pikachu.jpg"
                 },
                 {
-                    "id": 12,
-                    "name": "Raichu"
+                    "name": "Raichu",
+                    "image": "../image/raichu.jpg"
                 }
             ]
         },
@@ -211,12 +211,12 @@
             "image": "../image/pikachu.jpg",
             "evolutions": [
                 {
-                    "id": 10,
-                    "name": "Pichu"
+                    "name": "Pichu",
+                    "image": "../image/pichu.jpg"
                 },
                 {
-                    "id": 12,
-                    "name": "Raichu"
+                    "name": "Raichu",
+                    "image": "../image/raichu.jpg"
                 }
             ]
         },
@@ -231,12 +231,12 @@
             "image": "../image/raichu.jpg",
             "evolutions": [
                 {
-                    "id": 10,
-                    "name": "Pichu"
+                    "name": "Pichu",
+                    "image": "../image/pichu.jpg"
                 },
                 {
-                    "id": 11,
-                    "name": "Pikachu"
+                    "name": "Pikachu",
+                    "image": "../image/pikachu.jpg"
                 }
             ]
         },
@@ -251,8 +251,8 @@
             "image": "../image/meowth.jpg",
             "evolutions": [
                 {
-                    "id": 14,
-                    "name": "Persian"
+                    "name": "Persian",
+                    "image": "../image/persian.jpg"
                 }
             ]
         },
@@ -267,8 +267,8 @@
             "image": "../image/persian.jpg",
             "evolutions": [
                 {
-                    "id": 13,
-                    "name": "Meowth"
+                    "name": "Meowth",
+                    "image": "../image/meowth.jpg"
                 }
             ]
         },
