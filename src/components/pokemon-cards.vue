@@ -28,15 +28,6 @@
                 pokemonList: []
             }
         },
-        computed: {
-            filteredPokemonList() {
-                return this.pokemonList.filter((pokemon) =>
-                    pokemon.name
-                        .toLowerCase()
-                        .includes(this.$parent.searchTerm.toLowerCase())
-                )
-            }
-        },
         mounted() {
             this.fetchPokemonData()
         },

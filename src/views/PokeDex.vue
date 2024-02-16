@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="header">PokéDex</h1>
-        <PokemonCards />
+        <PokemonCards :pokemon="sortedPokemon" />
     </div>
 </template>
 
