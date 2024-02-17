@@ -103,7 +103,7 @@
         font-size: 1.3rem;
     }
 
-    @media (min-width: 375px) {
+    @media (max-width: 375px) {
         .pokemon-details {
             display: flex;
             flex-direction: column-reverse;

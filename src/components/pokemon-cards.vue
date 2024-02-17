@@ -1,6 +1,6 @@
 <template>
     <div class="card-container">
-        <div v-for="pokemon in displayedPokemon" :key="pokemon.id" class="card">
+        <div v-for="pokemon in filteredPokemon" :key="pokemon.id" class="card">
             <img
                 :src="pokemon.image"
                 class="card-img-top"
@@ -27,6 +27,10 @@
             limit: {
                 type: Number,
                 default: null
+            },
+            filterType: {
+                type: String,
+                default: ''
             }
         },
         data() {
@@ -35,14 +39,16 @@
             }
         },
         computed: {
-            displayedPokemon() {
-                if (this.limit) {
-                    return this.shuffleArray(this.pokemonList).slice(
-                        0,
-                        this.limit
+            filteredPokemon() {
+                let list = this.pokemonList
+                if (this.filterType) {
+                    list = list.filter((pokemon) =>
+                        pokemon.type.includes(this.filterType)
                     )
                 }
-                return this.pokemonList
+                return this.limit
+                    ? this.shuffleArray(list).slice(0, this.limit)
+                    : list
             }
         },
         methods: {
