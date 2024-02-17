@@ -1,7 +1,8 @@
 <template>
+    <!-- Gav upp på search grejen kunde inte få den och funka så tänkte detta filter funkar typ ändå -->
     <div>
         <h1 class="header">PokéDex</h1>
-        <div>
+        <div class="pokemon-filters">
             <label>Type</label>
             <select v-model="selectedType">
                 <option value="">All</option>
@@ -15,8 +16,8 @@
                 <option value="Poison">Poison</option>
                 <option value="Psychic">Psychic</option>
             </select>
-            <PokemonCards :filterType="selectedType" />
         </div>
+        <PokemonCards :filterType="selectedType" />
     </div>
 </template>
 
@@ -35,4 +36,10 @@
     }
 </script>
 
-<style scoped></style>
+<style scoped>
+    .pokemon-filters {
+        width: 10rem;
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+</style>
