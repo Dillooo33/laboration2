@@ -279,7 +279,7 @@
             "category": "New Species",
             "abilities": ["Synchronize"],
             "weaknesses": ["Bug", "Ghost", "Dark"],
-            "evolutionStage": "One",
+            "evolutionStage": "",
             "image": "../image/mew.jpg",
             "evolutions": []
         },
@@ -290,7 +290,7 @@
             "category": "Genetic",
             "abilities": ["Pressure"],
             "weaknesses": ["Bug", "Ghost", "Dark"],
-            "evolutionStage": "One",
+            "evolutionStage": "",
             "image": "../image/mewtwo.jpg",
             "evolutions": []
         },
@@ -301,7 +301,7 @@
             "category": "Freeze",
             "abilities": ["Pressure"],
             "weaknesses": ["Fire", "Electric", "Rock", "Steel"],
-            "evolutionStage": "One",
+            "evolutionStage": "",
             "image": "../image/articuno.jpg",
             "evolutions": []
         },
@@ -312,7 +312,7 @@
             "category": "Electric",
             "abilities": ["Pressure"],
             "weaknesses": ["Ice", "Rock"],
-            "evolutionStage": "One",
+            "evolutionStage": "",
             "image": "../image/zapdos.jpg",
             "evolutions": []
         },
@@ -323,9 +323,91 @@
             "category": "Flame",
             "abilities": ["Pressure"],
             "weaknesses": ["Water", "Electric", "Rock"],
-            "evolutionStage": "One",
+            "evolutionStage": "",
             "image": "../image/moltres.jpg",
             "evolutions": []
+        },
+        {
+            "id": 20,
+            "name": "Psyduck",
+            "type": ["Water"],
+            "category": "Duck",
+            "abilities": ["Damp", "Cloud Nine"],
+            "weaknesses": ["Grass", "Electric"],
+            "evolutionStage": "One",
+            "image": "../image/psyduck.jpg",
+            "evolutions": [
+                {
+                    "name": "Golduck",
+                    "image": "../image/golduck.jpg"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Golduck",
+            "type": ["Water"],
+            "category": "Duck",
+            "abilities": ["Damp", "Cloud Nine"],
+            "weaknesses": ["Grass", "Electric"],
+            "evolutionStage": "Two",
+            "image": "../image/golduck.jpg",
+            "evolutions": [
+                {
+                    "name": "Psyduck",
+                    "image": "../image/psyduck.jpg"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Ditto",
+            "type": ["Normal"],
+            "category": "Transform",
+            "abilities": ["Limber"],
+            "weaknesses": ["Fighting"],
+            "evolutionStage": "",
+            "image": "../image/ditto.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 23,
+            "name": "Onix",
+            "type": ["Rock", "Ground"],
+            "category": "Rock Snake",
+            "abilities": ["Rock Head", "Sturdy"],
+            "weaknesses": [
+                "Water",
+                "Grass",
+                "Ice",
+                "Fighting",
+                "Ground",
+                "Steel"
+            ],
+            "evolutionStage": "One",
+            "image": "../image/onix.jpg",
+            "evolutions": [
+                {
+                    "name": "Steelix",
+                    "image": "../image/steelix.jpg"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Steelix",
+            "type": ["Steel", "Ground"],
+            "category": "Iron Snake",
+            "abilities": ["Rock Head", "Sturdy"],
+            "weaknesses": ["Fire", "Water", "Fighting", "Ground"],
+            "evolutionStage": "Two",
+            "image": "../image/steelix.jpg",
+            "evolutions": [
+                {
+                    "name": "Onix",
+                    "image": "../image/onix.jpg"
+                }
+            ]
         }
     ]
 }
