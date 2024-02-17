@@ -1,10 +1,7 @@
 <template>
     <h1 class="header">Home</h1>
     <heroImg />
-    <p>
-        See a few pokemons under. To view all click on pokeDex on the navigation
-        above!
-    </p>
+    <p>Random Pokemon displays below to view all click on PokeDex above!</p>
     <PokemonCards :limit="3" />
 </template>
 
@@ -22,7 +19,7 @@
 
 <style scoped>
     p {
-        margin: 5rem 15rem 3rem 15rem;
+        margin: 5rem 20rem 3rem 20rem;
         font-size: 1.2rem;
     }
 </style>
