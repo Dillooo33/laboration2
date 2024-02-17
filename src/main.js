@@ -9,5 +9,4 @@ import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.js'
 const app = createApp(App)
 app.use(router)
 app.use(createPinia())
-
 app.mount('#app')

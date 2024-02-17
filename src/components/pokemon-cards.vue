@@ -1,6 +1,6 @@
 <template>
     <div class="card-container">
-        <div v-for="pokemon in pokemonList" :key="pokemon.id" class="card">
+        <div v-for="pokemon in displayedPokemon" :key="pokemon.id" class="card">
             <img
                 :src="pokemon.image"
                 class="card-img-top"
@@ -23,18 +23,26 @@
     import axios from 'axios'
 
     export default {
+        props: {
+            limit: {
+                type: Number,
+                default: null
+            }
+        },
         data() {
             return {
                 pokemonList: []
             }
         },
         computed: {
-            filteredPokemonList() {
-                return this.pokemonList.filter((pokemon) =>
-                    pokemon.name
-                        .toLowerCase()
-                        .includes(this.searchQuery.toLowerCase())
-                )
+            displayedPokemon() {
+                if (this.limit) {
+                    return this.shuffleArray(this.pokemonList).slice(
+                        0,
+                        this.limit
+                    )
+                }
+                return this.pokemonList
             }
         },
         methods: {
@@ -50,6 +58,9 @@
             },
             viewPokemon(pokemonId) {
                 this.$router.push({ path: '/pokemon/' + pokemonId })
+            },
+            shuffleArray(array) {
+                return array.sort(() => 0.5 - Math.random())
             }
         },
         mounted() {

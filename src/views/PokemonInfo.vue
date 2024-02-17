@@ -102,4 +102,18 @@
     p {
         font-size: 1.3rem;
     }
+
+    @media (min-width: 375px) {
+        .pokemon-details {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .pokemon-image {
+            margin: 0 0 3rem 0;
+        }
+
+        .evolution-container {
+            margin: 5rem 2rem 3rem 0;
+        }
+    }
 </style>

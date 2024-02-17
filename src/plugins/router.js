@@ -10,7 +10,8 @@ const routes = [
     {
         path: '/pokemon/:id',
         name: 'pokemonInfo',
-        component: () => import('@/views/PokemonInfo.vue')
+        component: () => import('@/views/PokemonInfo.vue'),
+        props: true
     }
 ]
 

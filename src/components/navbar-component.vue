@@ -101,4 +101,11 @@
         border-radius: 5px;
         font-size: 1.5rem;
     }
+
+    @media (max-width: 380px) {
+        .navbar-brand {
+            font-size: 0.9rem;
+            width: 8.5rem;
+        }
+    }
 </style>
