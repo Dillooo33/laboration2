@@ -26,7 +26,9 @@
                         >
                     </li>
                 </ul>
-                <button @click="toggleTheme">Toggle Theme</button>
+                <button class="btn_theme" @click="toggleTheme">
+                    {{ buttonText }}
+                </button>
                 <form class="d-flex" role="search">
                     <input
                         class="form-control me-2"
@@ -50,7 +52,11 @@
 <script setup>
     import { RouterLink } from 'vue-router'
     import { useColorThemeStore } from '@/stores/darkOrLight.js'
+    import { computed } from 'vue'
     const store = useColorThemeStore()
+    const buttonText = computed(() =>
+        store.isLightTheme ? 'Dark Theme' : 'Light Theme'
+    )
     function toggleTheme() {
         store.toggle()
     }
@@ -80,11 +86,9 @@
     }
 
     .btn-outline-success {
-        justify-content: center;
-        align-items: center;
         color: #5f5e5e;
         font-size: 1.5rem;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 2.3rem 0.5rem 1rem;
         border-radius: 5px;
         border: 1px solid;
     }
@@ -106,6 +110,22 @@
         padding: 0.5rem 1rem;
         border-radius: 5px;
         font-size: 1.5rem;
+    }
+    .btn_theme {
+        justify-content: center;
+        align-items: center;
+        color: #5f5e5e;
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+        border-radius: 5px;
+        border: 1px solid;
+        margin: 1rem;
+        letter-spacing: 1px;
+    }
+    .btn_theme:hover {
+        background-color: #5f5e5e;
+        color: #f3f3f3;
+        transition: background-color 0.3s ease;
     }
 
     @media (max-width: 380px) {
