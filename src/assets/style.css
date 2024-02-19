@@ -9,12 +9,22 @@
 #app {
     text-decoration: none;
     letter-spacing: 0.1rem;
-    color: rgba(255, 255, 255, 0.87);
-    background: #242424;
+    /* color: #f3f3f3;
+    background-color: #242424; */
 }
 
 .header {
     font-size: 3rem;
     text-align: center;
     padding: 2rem;
+}
+
+.LightTheme {
+    background: #f3f3f3;
+    color: #242424;
+}
+
+.DarkTheme {
+    color: #f3f3f3;
+    background-color: #242424;
 }

@@ -26,6 +26,7 @@
                         >
                     </li>
                 </ul>
+                <button @click="toggleTheme">Toggle Theme</button>
                 <form class="d-flex" role="search">
                     <input
                         class="form-control me-2"
@@ -46,8 +47,13 @@
     </nav>
 </template>
 
-<script>
+<script setup>
     import { RouterLink } from 'vue-router'
+    import { useColorThemeStore } from '@/stores/darkOrLight.js'
+    const store = useColorThemeStore()
+    function toggleTheme() {
+        store.toggle()
+    }
 </script>
 
 <style scoped>
