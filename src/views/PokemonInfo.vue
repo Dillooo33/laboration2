@@ -96,17 +96,20 @@
     }
 
     .evolution-container {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     p {
         font-size: 1.3rem;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 380px) {
         .pokemon-details {
             display: flex;
             flex-direction: column-reverse;
+        }
+        .pokemon-info {
+            margin-left: 3rem;
         }
         .pokemon-image {
             margin: 0 0 3rem 0;

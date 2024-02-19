@@ -89,7 +89,7 @@
         padding: 2.5rem;
         border: 1px solid #5f5e5e;
         border-radius: 5px;
-        width: 20rem;
+        width: 17rem;
     }
 
     .card-img-top {

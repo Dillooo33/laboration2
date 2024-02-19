@@ -182,26 +182,6 @@
         },
         {
             "id": 10,
-            "name": "Pichu",
-            "type": ["Electric"],
-            "category": "Tiny Mouse",
-            "abilities": ["Static"],
-            "weaknesses": ["Ground"],
-            "evolutionStage": "One",
-            "image": "../image/pichu.jpg",
-            "evolutions": [
-                {
-                    "name": "Pikachu",
-                    "image": "../image/pikachu.jpg"
-                },
-                {
-                    "name": "Raichu",
-                    "image": "../image/raichu.jpg"
-                }
-            ]
-        },
-        {
-            "id": 11,
             "name": "Pikachu",
             "type": ["Electric"],
             "category": "Mouse",
@@ -221,7 +201,7 @@
             ]
         },
         {
-            "id": 12,
+            "id": 11,
             "name": "Raichu",
             "type": ["Electric"],
             "category": "Mouse",
@@ -241,7 +221,7 @@
             ]
         },
         {
-            "id": 13,
+            "id": 12,
             "name": "Meowth",
             "type": ["Normal"],
             "category": "Scratch Cat",
@@ -257,7 +237,7 @@
             ]
         },
         {
-            "id": 14,
+            "id": 13,
             "name": "Persian",
             "type": ["Normal"],
             "category": "Classy Cat",
@@ -273,62 +253,7 @@
             ]
         },
         {
-            "id": 15,
-            "name": "Mew",
-            "type": ["Psychic"],
-            "category": "New Species",
-            "abilities": ["Synchronize"],
-            "weaknesses": ["Bug", "Ghost", "Dark"],
-            "evolutionStage": "",
-            "image": "../image/mew.jpg",
-            "evolutions": []
-        },
-        {
-            "id": 16,
-            "name": "Mewtwo",
-            "type": ["Psychic"],
-            "category": "Genetic",
-            "abilities": ["Pressure"],
-            "weaknesses": ["Bug", "Ghost", "Dark"],
-            "evolutionStage": "",
-            "image": "../image/mewtwo.jpg",
-            "evolutions": []
-        },
-        {
-            "id": 17,
-            "name": "Articuno",
-            "type": ["Ice", "Flying"],
-            "category": "Freeze",
-            "abilities": ["Pressure"],
-            "weaknesses": ["Fire", "Electric", "Rock", "Steel"],
-            "evolutionStage": "",
-            "image": "../image/articuno.jpg",
-            "evolutions": []
-        },
-        {
-            "id": 18,
-            "name": "Zapdos",
-            "type": ["Electric", "Flying"],
-            "category": "Electric",
-            "abilities": ["Pressure"],
-            "weaknesses": ["Ice", "Rock"],
-            "evolutionStage": "",
-            "image": "../image/zapdos.jpg",
-            "evolutions": []
-        },
-        {
-            "id": 19,
-            "name": "Moltres",
-            "type": ["Fire", "Flying"],
-            "category": "Flame",
-            "abilities": ["Pressure"],
-            "weaknesses": ["Water", "Electric", "Rock"],
-            "evolutionStage": "",
-            "image": "../image/moltres.jpg",
-            "evolutions": []
-        },
-        {
-            "id": 20,
+            "id": 14,
             "name": "Psyduck",
             "type": ["Water"],
             "category": "Duck",
@@ -344,7 +269,7 @@
             ]
         },
         {
-            "id": 21,
+            "id": 15,
             "name": "Golduck",
             "type": ["Water"],
             "category": "Duck",
@@ -360,18 +285,7 @@
             ]
         },
         {
-            "id": 22,
-            "name": "Ditto",
-            "type": ["Normal"],
-            "category": "Transform",
-            "abilities": ["Limber"],
-            "weaknesses": ["Fighting"],
-            "evolutionStage": "",
-            "image": "../image/ditto.jpg",
-            "evolutions": []
-        },
-        {
-            "id": 23,
+            "id": 16,
             "name": "Onix",
             "type": ["Rock", "Ground"],
             "category": "Rock Snake",
@@ -394,12 +308,98 @@
             ]
         },
         {
+            "id": 17,
+            "name": "Ditto",
+            "type": ["Normal"],
+            "category": "Transform",
+            "abilities": ["Limber"],
+            "weaknesses": ["Fighting"],
+            "evolutionStage": "",
+            "image": "../image/ditto.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 18,
+            "name": "Articuno",
+            "type": ["Ice", "Flying"],
+            "category": "Freeze",
+            "abilities": ["Pressure"],
+            "weaknesses": ["Fire", "Electric", "Rock", "Steel"],
+            "evolutionStage": "",
+            "image": "../image/articuno.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 19,
+            "name": "Zapdos",
+            "type": ["Electric", "Flying"],
+            "category": "Electric",
+            "abilities": ["Pressure"],
+            "weaknesses": ["Ice", "Rock"],
+            "evolutionStage": "",
+            "image": "../image/zapdos.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 20,
+            "name": "Moltres",
+            "type": ["Fire", "Flying"],
+            "category": "Flame",
+            "abilities": ["Pressure"],
+            "weaknesses": ["Water", "Electric", "Rock"],
+            "evolutionStage": "",
+            "image": "../image/moltres.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 21,
+            "name": "Mew",
+            "type": ["Psychic"],
+            "category": "New Species",
+            "abilities": ["Synchronize"],
+            "weaknesses": ["Bug", "Ghost", "Dark"],
+            "evolutionStage": "",
+            "image": "../image/mew.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 22,
+            "name": "Mewtwo",
+            "type": ["Psychic"],
+            "category": "Genetic",
+            "abilities": ["Pressure"],
+            "weaknesses": ["Bug", "Ghost", "Dark"],
+            "evolutionStage": "",
+            "image": "../image/mewtwo.jpg",
+            "evolutions": []
+        },
+        {
+            "id": 23,
+            "name": "Pichu",
+            "type": ["Electric"],
+            "category": "Tiny Mouse",
+            "abilities": ["Static"],
+            "weaknesses": ["Ground"],
+            "evolutionStage": "One",
+            "image": "../image/pichu.jpg",
+            "evolutions": [
+                {
+                    "name": "Pikachu",
+                    "image": "../image/pikachu.jpg"
+                },
+                {
+                    "name": "Raichu",
+                    "image": "../image/raichu.jpg"
+                }
+            ]
+        },
+        {
             "id": 24,
             "name": "Steelix",
             "type": ["Steel", "Ground"],
             "category": "Iron Snake",
             "abilities": ["Rock Head", "Sturdy"],
-            "weaknesses": ["Fire", "Water", "Fighting", "Ground"],
+            "weaknesses": ["Water", "Fire", "Fighting", "Ground"],
             "evolutionStage": "Two",
             "image": "../image/steelix.jpg",
             "evolutions": [

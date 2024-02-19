@@ -13,7 +13,6 @@
                 <option value="Rock">Rock</option>
                 <option value="Electric">Electric</option>
                 <option value="Ground">Ground</option>
-                <option value="Steel">Steel</option>
                 <option value="Ice">Ice</option>
                 <option value="Flying">Flying</option>
                 <option value="Poison">Poison</option>
