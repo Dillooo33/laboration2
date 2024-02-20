@@ -15,12 +15,12 @@
                 />
             </div>
             <div class="copyright">&copy; Dylans Pokémon 2024</div>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="email">
                 <input
                     class="form-control me-2"
-                    type="search"
+                    type="email"
                     placeholder="Email..."
-                    aria-label="Search"
+                    aria-label="email"
                 />
                 <button class="btn btn-blue" type="submit">Subscibe</button>
             </form>
