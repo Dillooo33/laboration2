@@ -38,7 +38,7 @@
                     />
                     <button
                         @click.prevent="submitSearch"
-                        class="btn btn-outline-success"
+                        class="btn btn-blue"
                         type="submit"
                     >
                         Search
@@ -84,28 +84,27 @@
         color: #5f5e5e;
         text-decoration: none;
     }
-
-    .btn-outline-success {
-        color: #5f5e5e;
+    .btn-blue {
+        background-color: #1326b9;
         font-size: 1.5rem;
-        padding: 0.5rem 2.3rem 0.5rem 1rem;
+        color: #f3f3f3;
+        border-color: #1122a0;
+        padding: 0rem 2.5rem 0rem 1rem;
         border-radius: 5px;
         border: 1px solid;
     }
-
-    .btn-outline-success:hover {
-        background-color: #5f5e5e;
+    .btn-blue:hover {
+        background-color: #1122a0;
+        border-color: #1326b9;
         color: #f3f3f3;
         transition: background-color 0.3s ease;
-        border: 2px solid #5f5e5e;
     }
     .nav-item {
         margin-right: 1.5rem;
     }
     .nav-item:hover {
-        text-decoration: underline orange;
+        text-decoration: underline #1326b9;
     }
-
     .form-control {
         padding: 0.5rem 1rem;
         border-radius: 5px;
